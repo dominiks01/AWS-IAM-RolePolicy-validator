@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         if(args.length < 1){
-            System.err.println("No File Path was provided!");
+            System.err.println("No FilePath was provided!");
             return;
         }
 

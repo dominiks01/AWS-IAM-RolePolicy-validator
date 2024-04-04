@@ -7,7 +7,7 @@
         "Sid": "FirstStatement",
         "Effect": "Allow",
         "Action": ["iam:ChangePassword"],
-        "Resource": "*"
+        "Resource": "confidential"
       },
       {
         "Sid": "SecondStatement",
@@ -24,7 +24,7 @@
         ],
         "Resource": [
           "arn:aws:s3:::confidential-data",
-          "arn:aws:s3:::confidential-data/*"
+          "arn:aws:s3:::confidential-data"
         ],
         "Condition": {"Bool": {"aws:MultiFactorAuthPresent": "true"}}
       }

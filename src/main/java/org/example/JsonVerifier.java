@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class JsonVerifier {
 
-    private static boolean resourceWithAsterisk = false;
+    private static boolean resourceWithAsterisk = true;
 
     public static boolean verifyJson(String pathToFile) {
 
