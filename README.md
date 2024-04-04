@@ -1,2 +1,23 @@
 # AWS-IAM-RolePolicy-validator
-Methods verifying the input JSON data. Input data format is defined as AWS::IAM::Role Policy
+
+Given path to Json file returns false if an input JSON Resource field contains a single
+asterisk and true in any other case.
+
+If file is not in format of `AWS::IAM::Role Policy` then give user information and return ```true```;
+
+### Installation
+
+1. Clone the repo
+   ```sh
+    git clone https://github.com/dominiks01/AWS-IAM-RolePolicy-validator.git
+    ```
+
+2. Navigate to your Folder
+    ```sh
+    cd AWS-IAM-RolePolicy-validator/
+    ```
+
+3. Execute Gradle script to validate file
+    ```sh
+     ./gradlew runWithJavaExec -PpathToFile="<PathToYourFile>"
+    ```
