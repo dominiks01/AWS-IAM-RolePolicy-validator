@@ -19,5 +19,9 @@ If file is not in format of `AWS::IAM::Role Policy` then give user information a
 
 3. Execute Gradle script to validate file
     ```sh
-     ./gradlew runWithJavaExec -PpathToFile="<PathToYourFile>"
+    # On Linux    
+    ./gradlew runWithJavaExec -PpathToFile="<PathToYourFile>"
+   
+    # On Windows    
+    gradlew.bat runWithJavaExec -PpathToFile="<PathToYourFile>"
     ```
